@@ -23,3 +23,9 @@ In its current state, the server is able to send out a root chunk to clients and
 LWJGL - Used for OpenGL bindings, graphics window, input.
 
 Netty - Used for client-server communication, concurrent voxel manipulation across multiple clients.
+
+#### Hindsight
+We chose Java for its portability and because we thought its performance was "good enough". We were wrong.
+
+Our biggest obstacle on the software side of things was memory usage. Napkin math suggested that we'd need up to 4 GB of RAM just to store the world geometry at the detail we desired. We also wanted to be able to quickly load and deload chunks as the character moved or changed perspective. Being largely at the mercy of the garbage collector didn't help here. If we had access to proper pointers, we could have stored geometry more cleverly. We could also possibly access nodes with less recursion, and quickly discard chunks at will rather than wait on the GC.
+
