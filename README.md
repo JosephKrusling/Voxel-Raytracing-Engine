@@ -1,4 +1,4 @@
-Warning: This is an old project from a couple years back. You will find that this code is often lousy, inefficient, and poorly documented. We're still keeping it up because it's once of our favorite projects.
+Warning: This is an old project from a couple years back. You will find that this code is often lousy, inefficient, and poorly documented. We're still keeping it up because it's one of our favorite projects.
 # BattlePrism
 Battleprism is a voxel game engine framework and experimental ray-tracing renderer written principally in Java. This software was developed by Joseph Krusling (University of Cincinnati) and Thomas Skinner (Brandeis University). LWJGL skeleton provided by integeruser. Development is currently frozen.
 
