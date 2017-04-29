@@ -19,10 +19,12 @@ public class Game {
         net = new NetClient();
         netThread = new Thread(net, "Network Thread");
         netThread.start();
-
+        
         display = new Engine();
         displayThread = new Thread(display, "Display Thread");
         displayThread.start();
+        
+        int i = 0; //test edit
 
     }
 
